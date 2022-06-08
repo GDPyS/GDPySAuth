@@ -1,1 +1,3 @@
 git+https://github.com/GDPyS/GDPySLib
+fastapi
+uvloop
