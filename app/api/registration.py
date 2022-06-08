@@ -1,5 +1,7 @@
-from fastapi import APIRouter, Query
 from typing import Literal
+
+from fastapi import APIRouter
+from fastapi import Query
 
 registration_router = APIRouter(prefix="/database")
 

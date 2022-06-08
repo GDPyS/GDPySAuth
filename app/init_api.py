@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-import app.state
 import app.api
+import app.state
 
 
 def init_routers(fastapi_app: FastAPI) -> None:
@@ -19,6 +19,7 @@ def init_events(fastapi_app: FastAPI) -> None:
     async def on_shutdown() -> None:
         await app.state.services.mongo.disconnect()
         await app.state.services.redis.disconnect()
+
 
 def init_app() -> FastAPI:
     fastapi_app = FastAPI()

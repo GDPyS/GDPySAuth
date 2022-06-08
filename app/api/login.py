@@ -1,5 +1,8 @@
-from typing import Literal, Optional
-from fastapi import APIRouter, Query
+from typing import Literal
+from typing import Optional
+
+from fastapi import APIRouter
+from fastapi import Query
 
 login_router = APIRouter(prefix="/database/accounts")
 
